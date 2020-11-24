@@ -13,6 +13,9 @@
         <q-card class="absolute-center" style="width: 700px; max-width: 80vw;">
           <q-form @submit="openChat()">
             <q-card-section>
+              <i
+                class="fab fa-whatsapp fa-3x text-center full-width q-mb-md text-secondary"
+              ></i>
               <div class="text-h6 text-bold">
                 Text to any Whatsapp Number
               </div>
@@ -33,7 +36,7 @@
                 push
                 color="secondary"
                 label="Open Chat"
-                class="full-width q-mb-md"
+                class="full-width q-mb-md text-bold"
                 type="submit"
               />
             </q-card-actions>
