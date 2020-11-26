@@ -59,6 +59,16 @@ export default {
       window.location.href = `https://wa.me/507${this.phoneNumber}`;
     },
   },
+  mounted() {
+    let displayMode = "browser tab";
+    if (navigator.standalone) {
+      displayMode = "standalone-ios";
+    }
+    if (window.matchMedia("(display-mode: standalone)").matches) {
+      displayMode = "standalone";
+    }
+    console.log("DISPLAY_MODE_LAUNCH:", displayMode);
+  },
 };
 </script>
 
