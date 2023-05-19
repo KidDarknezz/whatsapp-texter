@@ -22,7 +22,7 @@
             </q-card-section>
             <q-card-section>
               <q-input
-                type="number"
+                type="email"
                 filled
                 lable="Number"
                 placeholder="65656565"
