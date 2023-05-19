@@ -22,12 +22,13 @@
             </q-card-section>
             <q-card-section>
               <q-input
-                type="email"
+                type="tel" pattern="[0-9]*"
                 filled
                 lable="Number"
                 placeholder="65656565"
                 color="secondary"
                 v-model="phoneNumber"
+                clearable
                 :rules="[(val) => !!val || 'Field is required']"
               />
             </q-card-section>
